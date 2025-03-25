@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Quicksand" , "sans-self";
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* -=====================================================================  */
+/* classic class */
+
+.btn{
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+/* -=====================================================================  */
+/* header start  */
+/* ___________________________________________________________________  */
+/* start bar  */
+header{
+    background: url(img/home_bg.jpeg)center center/cover;
+    height: 100vh;
+    position: relative;
+    
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    
+}
+#header img{
+    width: 80px;
+    margin: 0 25px;
+    z-index: 999;
+}
+#header .bar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    
+}
+#header .bar li {
+    z-index: 999;
+}
+#header .bar li a{
+    color: #fff;
+    font-weight: 700;
+    padding: 15px;
+    padding-bottom: 8px;
+}
+#header .bar li a:hover{
+    border-bottom:3px solid gold;
+}
+header .home-page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+}
+header .home-page h1{
+    color: #fff;
+    font-size: 40px;
+    padding-bottom: 20px;
+    z-index: 999;
+}
+header .home-page h1 span{
+    color: gold;
+}
+header .home-page p{
+    color: #fff;
+    padding: 20px 0;
+    font-size: 18px;
+    z-index: 999;
+}
+header .home-page .btn-primary{
+    color: #fff;
+    font-weight: 700;
+    transition: 0.3s ease;
+    z-index: 999;
+}
+header .home-page .btn-primary:hover{
+    background-color: gold;
+}
+header .pageprincipal{
+    z-index: 999;
+}
+header .pageprincipal::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/* ___________________________________________________________________  */
+/* End header  */
+/* -=====================================================================  */
+/* start main  */
+/* ___________________________________________________________________  */
+/* start about  */
+#about .container .title,
+#offer .container .title,
+#menu .container .title,
+#gallery .container .title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0;
+}
+#about .container .title h2,
+#offer .container .title h2,
+#menu .container .title h2,
+#gallery .container .title h2{
+    text-align: center;
+    font-size:40px ;
+    color: rgb(55, 55, 55);
+}
+#about .container .title p,
+#offer .container .title p,
+#menu .container .title p{
+    text-align: center;
+    font-weight: 600;
+    color: gray;
+}
+#about .container  .about-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 60px;
+}
+#about .container .about-content p{
+    font-size: 15px;
+    font-weight: 500;
+}
+#about .container .about-content .btn-secondary{
+    border:none;
+    color: #fff;
+    font-weight: 600;
+    margin: 20px 0;
+    background-color: grey;
+}
+#about .container .about-content img{
+    margin-left: 60px;
+}
+#about .container .about-content .btn-secondary:hover{
+    background-color: gold;
+}
+
+
+
+
+/* end about  */
+/* ___________________________________________________________________  */
+/* Start Offer */
+
+#offer{
+    background: url(img/offer-background.jpg)center center/cover no-repeat;
+    height: 70vh;
+}
+#offer .offers-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+#offer .container .title p{
+    color: #fff;
+    margin-bottom: 30px;
+}
+#offer .container .title h2{
+    color: gold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#offer .offers-items img{
+    width: 180px;
+}
+#offer .offers-items h3{
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 0;
+
+}
+#offer .offers-items p{
+    color: #fff;
+    padding-bottom: 10px;
+}
+#offer .offers-items span{
+    color: gold;
+    font-weight: 700;
+}
+#offer .offers-items span del{
+    font-size: 13px;
+    color: #fff;
+    padding: 0 5px;
+}
+/* End offer  */
+/* ___________________________________________________________________  */
+/* start menu */
+#menu .menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu .menu-items  .menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px;
+}
+/* #menu .menu-items .menu-item-right .menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+#menu .menu-items .menu-item-right img{
+    border-radius: 50%;
+    width: 100px;
+    margin: 0 20px;
+}
+#menu .menu-items .menu-item-left img{
+    margin: 0 20px;
+}
+#menu .menu-items .menu-item h3{
+    font-size: 18px;
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    position: relative;
+}
+#menu .menu-items .menu-item h3 span{
+    position: absolute;
+    right: 0;
+    color: gold;
+}
+#menu .menu-items .menu-item p{
+    padding-top: 10px;
+}
+#menu .container .btn-third{
+    text-align: center;
+    background-color: gold;
+    margin: 30px 0;
+    padding: 20 30px;
+    color: #fff;
+    font-weight: 700;
+}
+#menu .container .btn-third:hover{
+    background-color: gray;
+}
+/* ___________________________________________________________________  */
+/* end menu  */
+/* ___________________________________________________________________  */
+/* start daytime  */
+#daytime{
+    background: url(img/daytime_bg.jpeg)center center/cover no-repeat;
+    height: 40vh;
+}
+#daytime .daytime-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+#daytime .daytime-items .daytime-item{
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#daytime .daytime-items .daytime-item h3{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#daytime .daytime-items .daytime-item p{
+    color: #fff;
+}
+
+
+
+/* end daytime  */
+/* ___________________________________________________________________  */
+/* start Gallery  */
+#gallery .container .title h2{
+    color: #fff;
+}
+#gallery{
+    background: url(img/offer-background.jpg)center center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#gallery .img-gallery img{
+    width: 235px;
+    height: 25vh;
+    border-radius: 10px;
+    align-items: center;
+    margin: 30px;
+    opacity: 0.5;
+}
+#gallery .img-gallery img:hover{
+    opacity: 1;
+}
+
+
+
+
+/* end Gallery  */
+/* ___________________________________________________________________  */
+
+/* ___________________________________________________________________  */
+/* start Contact*/
+#contact .contact-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px ;
+}
+#contact .contact-content .contact-info{
+    margin-right: 50px;
+    padding-right: 60px;
+}
+#contact .contact-content .contact-info p{
+    line-height: 30px;
+}
+#contact .contact-content .contact-info p i{
+    color: gold;
+}
+#contact .contact-content .contact-info h3{
+    padding-bottom: 20px;
+    padding-top: 20px;
+} 
+#contact .contact-content .contact-info a{
+    padding: 7px;
+    color: gold;
+    background-color: gray;
+    border-radius: 50%;
+}
+#contact .contact-content form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+form {
+    margin-left: 80px;
+    margin-top: 30px;
+    padding-left: 40px;
+}
+form input{
+    width: 150%;
+    height: 50px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+form textarea{
+    width: 150%;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100px;
+    background-color: gainsboro;
+}
+form .btn-last{
+    background-color: gold;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+}
+form .btn-last:hover{
+    background-color: gray;
+}
+
+
+
+
+/* end contact  */
+/* ___________________________________________________________________  */
+
+/* ___________________________________________________________________  */
+/* start footer  */
+
+footer {
+    background-color: grey;
+    margin-top: 30px;
+}
+footer p{
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+
+/* end contact  */
+/* ___________________________________________________________________  */
+
+/* end main  */
+/* -========================== ===========================================  */
